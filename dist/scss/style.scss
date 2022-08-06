@@ -1,0 +1,249 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'lids';
+@import 'global';
+
+.topbar{
+    background: #1B0522;
+    padding: 12px 0;
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__inner-title{
+        font: 500 16px / 150% 'Rubik';
+        text-transform: uppercase;
+        margin-right: 20px;
+        text-align: center;
+    }
+    &__inner-country{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 128px;
+        width: 100%;
+    }
+    &__country-name{
+        font: 400 16px / 150% 'Rubik';
+    }
+}
+
+.header{
+    padding-top: 30px;
+    @media (max-width:637px){
+        padding-top: 20px; 
+    }
+    &__inner{
+       display: flex; 
+       justify-content: space-between;
+    }
+    &__inner-logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-img{
+        margin-right: 20px;
+    }
+    &__logo-link{
+        font: 500 22px / 150% 'Rubik';
+    }
+    &__inner-btn{
+        display: flex;
+        align-items: center;
+        font: 400 16px / 150% 'Rubik';
+    }
+    &__btn-first{
+        margin-right: 20px;
+    }
+    &__btn-signup{
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        border-radius: 500px;
+        padding: 1px;
+    }
+    &__signup-link{
+        display: inline-block;
+       padding: 11px 36px; 
+       background: #230E2B;
+       border-radius: 500px;
+    }
+    @media (max-width:637px) {
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__inner-logo{
+            margin-bottom: 30px;
+        }
+        &__inner-btn{
+            flex-direction: column;
+        }
+        &__btn-first{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.login{
+    padding: 210px 0;
+    @media (max-width:674px){
+        padding: 50px 0;
+    }
+    &__inner{
+        max-width: 846px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__inner-title{
+        font: 500 60px / 150% 'Rubik';  
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__inner-subtitle{
+        font: 400 16px / 150% 'Rubik';
+        text-align: center;
+    }
+    &__inner-form{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    &__form-email{
+        padding: 25px 5px 25px 70px;
+        border-radius: 500px;
+        border: none;
+
+    }
+    &__form-email::placeholder{
+        font: 400 16px / 150% 'Rubik';
+        color: #8B5D9A;
+    }
+    &__form-email:focus{
+        color: #8B5D9A;
+    }
+    &__img-email{
+        background: url(../images/icon/email.svg) no-repeat 30px 27px #42204E;
+    }
+    &__img-pas{
+        background: url(../images/icon/pas.svg) no-repeat 32px 24px #42204E;
+        margin: 10px 0;
+    }
+    .password-control {
+        position: absolute;
+        top: 154px;
+        right: 30px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icon/eye.svg) 0 0 no-repeat;
+    }
+    .password-control.view {
+        background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+    }
+    &__form-btn{
+        padding: 23px 165px 23px 166px;
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        border: none;
+        box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2);
+        border-radius: 500px;
+        color: #FFFFFF;
+        font: 500 16px / 150% 'Rubik';
+        cursor: pointer;
+    }
+    &__inner-recovery{
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+        font: 400 14px / 150% 'Rubik';
+    }
+    @media (max-width:674px){
+        &__inner-title{
+            font: 500 36px / 150% 'Rubik';  
+        }
+        &__inner-form{
+            padding-top: 30px;
+        }
+        .password-control{
+            top: 133px;
+        }
+    }
+    @media (max-width:444px){
+        &__form-btn{
+            padding: 23px 0;
+        }
+        &__inner-subtitle{
+            font: 400 14px / 150% 'Rubik'; 
+        }
+    }
+}
+
+.footer{
+    padding-bottom: 30px;
+    &__inner{
+        font: 400 14px / 150% 'Rubik';
+        color: #EEEEEE;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-nav{
+        max-width: 462px;
+        width: 100%;
+        margin-right: 20px;
+    }
+    &__nav-ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-politics{
+        margin-right: 20px;
+    }
+    &__inner-language{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 36px;
+        width: 100%;
+        height: 21px;
+        margin-right: 20px;
+    }
+    &__language-arrow{
+        width: 11px;
+        height: 11px;
+    }
+    @media (max-width:994px) {
+        &__inner{
+            flex-wrap: wrap; 
+            justify-content: space-evenly;
+        } 
+        &__inner-nav{
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width:596px){
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        } 
+        &__inner-nav{
+            margin-right: 0;
+        }
+        &__inner-politics{
+            margin-right: 0;
+        }
+        &__inner-language{
+            margin-right: 0;
+            margin: 20px 0;
+        }
+    }
+    @media (max-width:444px){
+        &__inner{
+            font: 400 12px / 150% 'Rubik';
+        }
+    }
+}
