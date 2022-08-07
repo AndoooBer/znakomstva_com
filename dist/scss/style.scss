@@ -116,13 +116,10 @@
         padding: 25px 5px 25px 70px;
         border-radius: 500px;
         border: none;
-
+        color: #8B5D9A;
     }
     &__form-email::placeholder{
         font: 400 16px / 150% 'Rubik';
-        color: #8B5D9A;
-    }
-    &__form-email:focus{
         color: #8B5D9A;
     }
     &__img-email{

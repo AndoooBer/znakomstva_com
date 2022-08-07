@@ -12,45 +12,81 @@
 <body>
     <div class="wrapper">
         <section class="chat">
-            <div class="container">
-                <div class="chat__inner">
-                    <div class="chat__inner-left">
-                        <a class="chat__left-message" href="#">
-                            <img class="chat__message-avatar" src="./images/content/avatar1.png" alt="avatar">
-                            <div class="chat__message-content">
-                                <div class="chat__content-name">Марина</div>
-                                <div class="chat__content-text">Привет! Как дела?
-                                    <div class="chat__text-quantity">1</div>
-                                </div>
+            <div class="chat__inner">
+                <div class="chat__inner-left">
+                    <a class="chat__left-message" href="#">
+                        <img class="chat__message-avatar" src="./images/content/avatar1.png" alt="avatar">
+                        <div class="chat__message-content">
+                            <div class="chat__content-name">Марина</div>
+                            <div class="chat__content-text">Привет! Как дела?
+                                <div class="chat__text-quantity">1</div>
                             </div>
-                        </a>
-                        <a class="chat__left-message chat__left-message--active" href="#">
-                            <img class="chat__message-avatar" src="./images/content/avatar2.png" alt="avatar">
-                            <div class="chat__message-content">
-                                <div class="chat__content-name">Алёна
-                                    <div class="chat__name-active"></div>
-                                </div>
-                                <div class="chat__content-text">Чем занимаешься?</div>
+                        </div>
+                    </a>
+                    <a class="chat__left-message chat__left-message--active" href="#">
+                        <img class="chat__message-avatar" src="./images/content/avatar2.png" alt="avatar">
+                        <div class="chat__message-content">
+                            <div class="chat__content-name">Алёна
+                                <div class="chat__name-active"></div>
                             </div>
-                        </a>
-                        <a class="chat__left-message" href="#">
-                            <img class="chat__message-avatar" src="./images/content/avatar3.png" alt="avatar">
-                            <div class="chat__message-content">
-                                <div class="chat__content-name">Вика</div>
-                                <div class="chat__content-text">Хорошо. До встречи 👋</div>
+                            <div class="chat__content-text">Чем занимаешься?</div>
+                        </div>
+                    </a>
+                    <a class="chat__left-message" href="#">
+                        <img class="chat__message-avatar" src="./images/content/avatar3.png" alt="avatar">
+                        <div class="chat__message-content">
+                            <div class="chat__content-name">Вика</div>
+                            <div class="chat__content-text">Хорошо. До встречи 👋</div>
+                        </div>
+                    </a>
+                    <a class="chat__left-message" href="#">
+                        <img class="chat__message-avatar" src="./images/content/avatar4.png" alt="avatar">
+                        <div class="chat__message-content">
+                            <div class="chat__content-name">Анастасия</div>
+                            <div class="chat__content-text">Привет! Как дела?</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="chat__inner-right">
+                    <div class="chat__right">
+                        <div class="chat__right-name">Алёна 22
+                            <div class="chat__name-active"></div>
+                        </div>
+                        <div class="chat__right-box">
+                            <img class="chat__box-img" src="./images/content/avatar5.png" alt="avatar">
+                            <div class="chat__box-message">
+                                <div class="chat__message-text">Привет</div>
+                                <div class="chat__message-text">Текст сообщения будет тут</div>
                             </div>
-                        </a>
-                        <a class="chat__left-message" href="#">
-                            <img class="chat__message-avatar" src="./images/content/avatar4.png" alt="avatar">
-                            <div class="chat__message-content">
-                                <div class="chat__content-name">Анастасия</div>
-                                <div class="chat__content-text">Привет! Как дела?</div>
+                        </div>
+                        <div class="chat__right-box chat__left-box">
+                            <div class="chat__box-message chat__box-message--right">
+                                <div class="chat__message-text">Привет</div>
+                                <div class="chat__message-text">Ответ на сообщение будет тут</div>
                             </div>
-                        </a>
+                            <img class="chat__box-img chat__box-img--right" src="./images/content/avatar6.png"
+                                alt="avatar">
+                        </div>
+                        <div class="chat__right-box">
+                            <img class="chat__box-img" src="./images/content/avatar5.png" alt="avatar">
+                            <div class="chat__box-message">
+                                <div class="chat__message-text">Еще одно сообщение в одну строку</div>
+                            </div>
+                        </div>
+                        <div class="chat__right-box chat__left-box">
+                            <div class="chat__box-message chat__box-message--right">
+                                <div class="chat__message-text">Ответ на сообщение в несколько строк </div>
+                                <div class="chat__message-text">Тут вторая строка</div>
+                                <div class="chat__message-text">Тут будет третья</div>
+                            </div>
+                            <img class="chat__box-img chat__box-img--right" src="./images/content/avatar6.png"
+                                alt="avatar">
+                        </div>
                     </div>
-                    <div class="chat__inner-right">
-                        
-                    </div>
+                    <form class="chat__right-form">
+                        <input class="chat__form-write" type="text" placeholder="Написать сообщение...">
+                        <button class="chat__form-btn"></button>
+                    </form>
                 </div>
             </div>
         </section>

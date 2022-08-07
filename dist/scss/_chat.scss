@@ -1,6 +1,10 @@
 @import 'global';
 
 .chat {
+	flex: 1 0 auto;
+	position: relative;
+	background: rgba(29, 11, 35, 0.85);
+	backdrop-filter: blur(4px);
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -15,6 +19,7 @@
 		bottom: 0;
 		left: 0;
 		margin: auto;
+		z-index: 2;
 	}
 	&__inner-left{
 		max-width: 400px;
@@ -73,5 +78,90 @@
 		background: #33E159;
 		border-radius: 50%;
 		margin-left: 5px;
+	}
+	&__inner-right{
+		background: #2A1332;
+		border-radius: 50px;
+		width: 100%;
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__right-name{
+		font: 500 15px / 150% 'Rubik';
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__right-box{
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__box-img{
+		margin-right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+	&__box-message{
+		padding: 10px 20px;
+		background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+		border-radius: 0px 500px 500px 500px;
+		font: 400 15px / 150% 'Rubik';
+	}
+	&__left-box{	
+		justify-content: flex-end
+	}
+	&__box-img--right{
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	&__box-message--right{
+		background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+		border-radius: 500px 0px 500px 500px;
+	}
+	&__right-form{
+		position: relative;
+	}
+	&__form-write{
+		padding: 18px 30px;
+		width: 100%;
+		background: #42204E;
+		border-radius: 500px;
+		border: none;
+		color: #8B5D9A;
+	}
+	&__form-write::placeholder{
+		color: #8B5D9A;
+		font: 400 16px / 150% 'Rubik';
+	}
+	&__form-btn{
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		background: url(../images/icon/btn-message.svg);
+		border: none;
+		position: absolute;
+		top: 17px;
+		right: 30px;
+	}
+	@media (max-width:963px) {
+		&__inner{
+			max-width: 95%;
+		}
+	}
+	@media (max-width:891px){
+		&__inner-left{
+			display: none;
+		}
+	}
+	@media (max-width:505px){
+		&__box-message{
+			font: 400 12px / 150% 'Rubik';
+		}
+	}
+	@media (max-width:385px){
+		&__form-write::placeholder{
+			font: 400 14px / 150% 'Rubik';
+		}
 	}
 }
