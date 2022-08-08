@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Chat mobile first</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <section class="topbar">
+                <div class="container">
+                    <div class="topbar__inner">
+                        <h1 class="topbar__inner-title">Знакомства по всему миру</h1>
+                        <a class="topbar__inner-country" href="#">
+                            <img class="topbar__country-flag" src="./images/icon/topbar-flag.svg" alt="flag">
+                            <div class="topbar__country-name">Америка</div>
+                            <img class="topbar__country-arrow" src="./images/icon/topbar-arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="header__background">
+                <div class="container">
+                    <div class="header__full-inner">
+                        <div class="header__inner-logo">
+                            <a class="header__logo-img" href="#">
+                                <img class="header__img-link header__img-link--full" src="./images/logo.svg" alt="logo">
+                            </a>
+                            <a class="header__logo-link header__logo-link--full" href="#">Znakomstva.com</a>
+                        </div>
+                        <nav class="header__inner-menu">
+                            <ul class="header__menu-ul">
+                                <li class="header__ul-list">
+                                    <a class="header__list-link header__list-link--active" href="#">Анкеты</a>
+                                    <div class="header__list-borfer"></div>
+                                </li>
+                                <li class="header__ul-list">
+                                    <a class="header__list-link" href="#">Сообщения</a>
+                                </li>
+                                <li class="header__ul-list">
+                                    <a class="header__list-link" href="#">Подписка</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__inner-location">
+                            <a class="header__location-country" href="#">Россия</a>
+                            <a class="header__location-arrow" href="#"></a>
+                        </div>
+                        <div class="header__inner-icons">
+                            <a class="header__icons-search" href="#"></a>
+                            <a class="header__icons-notification" href="#">
+                                <span class="header__notification-number">123</span>
+                            </a>
+                        </div>
+                        <div class="header__inner-user">
+                            <a class="header__user-link" href="#">
+                                <img class="header__link-avatar" src="./images/content/avatar7.png" alt="avatar">
+                            </a>
+                            <a class="header__user-name" href="#">Иван Иванов</a>
+                        </div>
+                        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="chat-mobile">
+                <div class="container">
+                    <div class="chat__inner-left chat__inner-mobile">
+
+                        <div class="chat__mobile-navigation">
+                            <a class="chat__navigation-arrow" href="#"></a>
+                            <a class="chat__navigation-link" href="#">Сообщения</a>
+                        </div>
+
+                        <a class="chat__left-message" href="#">
+                            <img class="chat__message-avatar" src="./images/content/avatar1.png" alt="avatar">
+                            <div class="chat__message-content">
+                                <div class="chat__content-name">Марина</div>
+                                <div class="chat__content-text">Привет! Как дела?
+                                    <div class="chat__text-quantity">1</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="chat__left-message" href="#">
+                            <img class="chat__message-avatar" src="./images/content/avatar2.png" alt="avatar">
+                            <div class="chat__message-content">
+                                <div class="chat__content-name">Алёна
+                                    <div class="chat__name-active"></div>
+                                </div>
+                                <div class="chat__content-text">Чем занимаешься?</div>
+                            </div>
+                        </a>
+                        <a class="chat__left-message" href="#">
+                            <img class="chat__message-avatar" src="./images/content/avatar3.png" alt="avatar">
+                            <div class="chat__message-content">
+                                <div class="chat__content-name">Вика</div>
+                                <div class="chat__content-text">Хорошо. До встречи 👋</div>
+                            </div>
+                        </a>
+                        <a class="chat__left-message" href="#">
+                            <img class="chat__message-avatar" src="./images/content/avatar4.png" alt="avatar">
+                            <div class="chat__message-content">
+                                <div class="chat__content-name">Анастасия</div>
+                                <div class="chat__content-text">Привет! Как дела?</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

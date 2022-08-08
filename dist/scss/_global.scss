@@ -1,6 +1,7 @@
 html,
 body {
 	height: 100%;
+	background: #230E2B;
 }
 
 .wrapper {
@@ -31,4 +32,8 @@ body {
 		background: url(../images/bg-first.png) no-repeat, url(../images/bg-second.png) right no-repeat #230E2B;
 	}
 
+}
+
+.header__background{
+	background: #2D1436;
 }

@@ -1,9 +1,87 @@
 @mixin font-400 {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 @mixin font-500 {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+    font-size: 10px;
 }
+
+@mixin font-link {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+
+@mixin burger {
+    --burger-width: 25px;
+    --burger-height: 25px;
+    --burger-line-height: 3px;
+  
+    position: relative;
+    border: none;
+    padding: 0;
+    width: var(--burger-width);
+    height: var(--burger-height);
+    color: #EE0979;  
+    background-color: transparent;
+    cursor: pointer;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: var(--burger-line-height);
+      background-color: currentColor;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+  
+    &::before {
+      top: 0;
+      border-radius: 10px;
+    }
+  
+    &::after {
+      top: calc(100% - var(--burger-line-height));
+      border-radius: 10px;
+    }
+  
+    &__line {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: var(--burger-line-height);
+      background-color: currentColor;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+  
+    &--active {
+      &::before {
+        top: 50%;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      }
+  
+      &::after {
+        top: 50%;
+        transform: rotate(-45deg);
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      }
+  
+      .burger__line {
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }

@@ -1,0 +1,175 @@
+.header{
+    &__full-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+    &__inner-menu{
+        @include font-400;
+        max-width: 323px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+    }
+    &__menu-ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__list-link--active{
+        color: #FE6703;
+    }
+    &__list-borfer{
+       height: 4px;
+       background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%); 
+        transform: translateY(46px);
+    }
+    &__inner-location{
+        @include font-400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 84px;
+        width: 100%;
+        margin: 0 10px;
+    }
+    &__location-arrow{
+        width: 18px;
+        height: 18px;
+        background: url(../images/icon/header-arrow.svg);
+    }
+    &__inner-icons{
+        max-width: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px 0 15px;
+    }
+    &__icons-search{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icon/header-search.svg);
+    }
+    &__icons-notification{
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background: url(../images/icon/header-notification.svg);
+        position: relative;
+    }
+    &__notification-number{
+        position: absolute;
+        @include font-500;
+        padding: 1px 5px;
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        border-radius: 20px;
+        left: 10px;
+        bottom: 12px;
+    }
+    &__inner-user{
+        display: flex;
+        max-width: 156px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        @include font-400;
+    }
+    .burger{
+        @include burger;
+        display: none; 
+    }
+    @media (max-width:953px) {
+        &__inner-menu{
+            display: none;
+        }
+        .burger{
+            display: block; 
+        }
+    }
+    @media (max-width:953px){
+        &__full-inner{
+            padding: 18px 0;
+        }
+        &__inner-location{
+            display: none;
+        }
+    }
+    @media (max-width:641px){
+        &__inner-user{
+            justify-content: center;
+            max-width: 47px;
+        }
+        &__user-name{
+            display: none;
+        }
+        &__logo-link--full{
+            display: none;
+        }
+    }
+    @media (max-width:422px){
+        &__img-link--full{
+           width: 40px;
+           height: 40px; 
+        }
+        &__inner-icons{
+            max-width: 102px;
+            margin: 0;
+        }
+        &__icons-search{
+            width: 29px;
+           height: 30px;
+           background-repeat: no-repeat;
+           background-size: cover;
+           margin-right: 40px;
+        }
+        &__icons-notification{
+            width: 27px;
+            height: 30px;
+            background-repeat: no-repeat;
+           background-size: cover;
+        }
+        &__notification-number{
+            left: 18px;
+            bottom: 20px;
+        }
+        &__link-avatar{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.chat{
+    &__inner-mobile{
+        display: none;
+        margin: 30px auto;
+        @media (max-width:665px) {
+            display: block;
+        }
+    }
+    @media (max-width:665px) {
+        &__left-message{
+            max-width: 100%;
+            padding-left: 0;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__mobile-navigation{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__navigation-arrow{
+       width: 24px;
+       height: 24px; 
+       background: url(../images/icon/mobile-arrow.svg);
+    }
+    &__navigation-link{
+        @include font-link;
+    }
+}
