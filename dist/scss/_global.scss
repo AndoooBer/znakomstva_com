@@ -26,10 +26,10 @@ body {
 }
 
 .background{
-	background: url(../images/bg.png) center #230E2B;
-	background-size: cover;
+	background: url(../images/bg.png) center bottom, url(../images/bg3.png) center no-repeat;
+
 	@media (max-width:1210px) {
-		background: url(../images/bg-first.png) no-repeat, url(../images/bg-second.png) right no-repeat #230E2B;
+		background: url(../images/bg-first.png) 0 101px no-repeat, url(../images/bg-second.png) right 528px no-repeat, url(../images/bg3.png) center no-repeat #230E2B;
 	}
 
 }

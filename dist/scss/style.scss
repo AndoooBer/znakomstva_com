@@ -131,13 +131,14 @@
         border-radius: 500px;
         border: none;
         color: #8B5D9A;
+        font: 400 16px / 150% 'Rubik';
     }
     &__form-email::placeholder{
         font: 400 16px / 150% 'Rubik';
         color: #8B5D9A;
     }
     &__img-email{
-        background: url(../images/icon/email.svg) no-repeat 30px 27px #42204E;
+        background: url(../images/icon/email.svg) no-repeat 30px 30px #42204E;
     }
     &__img-pas{
         background: url(../images/icon/pas.svg) no-repeat 32px 24px #42204E;
@@ -145,7 +146,7 @@
     }
     .password-control {
         position: absolute;
-        top: 154px;
+        top: 161px;
         right: 30px;
         display: inline-block;
         width: 20px;
