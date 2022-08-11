@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../znakomstva_com-adrian/dist"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "znakomstva_com"
+	}
+}
