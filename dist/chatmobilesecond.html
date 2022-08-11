@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Chat mobile first</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <section class="topbar">
+                <div class="container">
+                    <div class="topbar__inner">
+                        <h1 class="topbar__inner-title">Знакомства по всему миру</h1>
+                        <a class="topbar__inner-country" href="#">
+                            <img class="topbar__country-flag" src="./images/icon/topbar-flag.svg" alt="flag">
+                            <div class="topbar__country-name">Америка</div>
+                            <img class="topbar__country-arrow" src="./images/icon/topbar-arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="header__background">
+                <div class="container">
+                    <div class="header__full-inner">
+                        <div class="header__inner-logo">
+                            <a class="header__logo-img" href="#">
+                                <img class="header__img-link header__img-link--full" src="./images/logo.svg" alt="logo">
+                            </a>
+                            <a class="header__logo-link header__logo-link--full" href="#">Znakomstva.com</a>
+                        </div>
+                        <nav class="header__inner-menu">
+                            <ul class="header__menu-ul">
+                                <li class="header__ul-list">
+                                    <a class="header__list-link header__list-link--active" href="#">Анкеты</a>
+                                    <div class="header__list-borfer"></div>
+                                </li>
+                                <li class="header__ul-list">
+                                    <a class="header__list-link" href="#">Сообщения</a>
+                                </li>
+                                <li class="header__ul-list">
+                                    <a class="header__list-link" href="#">Подписка</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__inner-location">
+                            <a class="header__location-country" href="#">Россия</a>
+                            <a class="header__location-arrow" href="#"></a>
+                        </div>
+                        <div class="header__inner-icons">
+                            <a class="header__icons-search" href="#"></a>
+                            <a class="header__icons-notification" href="#">
+                                <span class="header__notification-number">123</span>
+                            </a>
+                        </div>
+                        <div class="header__inner-user">
+                            <a class="header__user-link" href="#">
+                                <img class="header__link-avatar" src="./images/content/avatar7.png" alt="avatar">
+                            </a>
+                            <a class="header__user-name" href="#">Иван Иванов</a>
+                        </div>
+                        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="chat-mobile">
+                <div class="container">
+                    <div class="chat__inner-right chat__inner-mobile">
+                        <div class="chat__right">
+                            <div class="chat__right-name">Алёна 22
+                                <div class="chat__name-active"></div>
+                            </div>
+                            <div class="chat__right-box">
+                                <img class="chat__box-img" src="./images/content/avatar5.png" alt="avatar">
+                                <div class="chat__box-message">
+                                    <div class="chat__message-text">Привет</div>
+                                    <div class="chat__message-text">Текст сообщения будет тут</div>
+                                </div>
+                            </div>
+                            <div class="chat__right-box chat__left-box">
+                                <div class="chat__box-message chat__box-message--right">
+                                    <div class="chat__message-text">Привет</div>
+                                    <div class="chat__message-text">Ответ на сообщение будет тут</div>
+                                </div>
+                                <img class="chat__box-img chat__box-img--right" src="./images/content/avatar6.png"
+                                    alt="avatar">
+                            </div>
+                            <div class="chat__right-box">
+                                <img class="chat__box-img" src="./images/content/avatar5.png" alt="avatar">
+                                <div class="chat__box-message">
+                                    <div class="chat__message-text">Еще одно сообщение в одну строку</div>
+                                </div>
+                            </div>
+                            <div class="chat__right-box chat__left-box">
+                                <div class="chat__box-message chat__box-message--right">
+                                    <div class="chat__message-text">Ответ на сообщение в несколько строк </div>
+                                    <div class="chat__message-text">Тут вторая строка</div>
+                                    <div class="chat__message-text">Тут будет третья</div>
+                                </div>
+                                <img class="chat__box-img chat__box-img--right" src="./images/content/avatar6.png"
+                                    alt="avatar">
+                            </div>
+                        </div>
+                        <form class="chat__right-form chat__right-form--active">
+                            <input class="chat__form-write" type="text" placeholder="Написать сообщение...">
+                            <button class="chat__form-btn"></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

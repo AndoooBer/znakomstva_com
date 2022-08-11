@@ -147,8 +147,11 @@
     &__inner-mobile{
         display: none;
         margin: 30px auto;
+        background-color: inherit;
         @media (max-width:665px) {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
     }
     @media (max-width:665px) {

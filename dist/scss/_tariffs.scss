@@ -1,0 +1,79 @@
+.tariffs{
+    padding-top: 30px;
+    &__inner-title{
+        font: 500 28px / 150% 'Rubik';
+    }
+    &__inner-content{
+        padding-top: 20px;
+        display: flex;
+    }
+    &__content-box--active{
+        max-width: 380px;
+        width: 100%;
+        padding: 1px;
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        border-radius: 50px;
+        margin-right: 20px;
+    }
+    &__content-box{
+        background: #1C0A22;
+        max-width: 380px;
+        width: 100%;
+        border-radius: 50px;
+        display: flex;
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+    &__content-box:last-child{
+        margin-right: 0;
+    }
+    &__box-img{
+        margin-bottom: 20px;
+    }
+    &__box-day{
+        margin-bottom: 5px;
+        font: 400 16px / 150% 'Rubik';
+    }
+    &__box-price{
+        margin-bottom: 20px;
+        font: 500 18px / 150% 'Rubik';
+    }
+    &__box-link--active{
+        padding: 15px 30px;
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        border-radius: 500px;
+        font: 500 14px / 150% 'Rubik';
+    }
+    &__box-link{
+        color: #694B73;
+        background: #3B2143;
+        padding: 15px 30px;
+        border-radius: 500px;
+        font: 500 14px / 150% 'Rubik';
+    }
+    @media (max-width:1105px) {
+        &__inner-content{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        &__content-line{
+            margin-bottom: 20px;
+        }
+        &__content-line:last-child{
+            margin-bottom: 50px;
+        }
+        &__content-box--active{
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width:781px) {
+        &__content-box--active{
+            margin-right: 0;
+        }
+        &__content-box{
+            margin-right: 0;
+        }
+    }
+}
