@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Tariffs</title>
+    <title>Account</title>
 </head>
 
 <body>
     <div class="wrapper wrapper-account">
-
+        
         <header class="header">
             <section class="topbar">
                 <div class="container">
@@ -73,31 +73,58 @@
         </header>
 
         <main class="main">
-            <section class="tariffs">
+            <section class="favorite">
                 <div class="container">
-                    <div class="tariffs__inner">
-                        <h3 class="tariffs__inner-title">Тарифы</h3>
-                        <div class="tariffs__inner-content">
-                            <div class="tariffs__content-box--active">
-                                <div class="tariffs__content-box">
-                                    <img class="tariffs__box-img" src="./images/content/tariffs1.png" alt="tariffs">
-                                    <div class="tariffs__box-day">1 день</div>
-                                    <div class="tariffs__box-price">500 руб.</div>
-                                    <a class="tariffs__box-link--active" href="#">Провести оплату</a>
+                    <div class="favorite__inner">
+                        <div class="favorite__inner-navigation">
+                            <div class="favorite__navigation-box">
+                                <div class="favorite__box-border"></div>
+                                <a class="favorite__box-link" href="#">
+                                    <img class="favorite__box-img" src="./images/icon/user-1.svg" alt="user">
+                                </a>
+                                <a href="favorite__box-name">Профиль</a>
+                            </div>
+                            <div class="favorite__navigation-box">
+                                <a class="favorite__box-link" href="#">
+                                    <img class="favorite__box-img" src="./images/icon/bookmark.svg" alt="bookmark">
+                                </a>
+                                <a href="favorite__box-name">Избранное</a>
+                            </div>
+                            <div class="favorite__navigation-box">
+                                <a class="favorite__box-link" href="#">
+                                    <img class="favorite__box-img" src="./images/icon/wallet-1.svg" alt="wallet">
+                                </a>
+                                <a href="favorite__box-name">Личный счет</a>
+                            </div>
+                            <div class="favorite__navigation-box">
+                                <a class="favorite__box-link" href="#">
+                                    <img class="favorite__box-img" src="./images/icon/logout.svg" alt="logout">
+                                </a>
+                                <a href="favorite__box-name">Выход</a>
+                            </div>
+                        </div>
+                        <div class="favorite__inner-select">
+                            <h3 class="favorite__select-title">Личный счет</h3>
+                            <div class="favorite__select-mobile">
+                                <div class="favorite__mobile-wrapper">
+                                    <a class="favorite__wrapper-title" href="#">Личный счет</a>
+                                    <img class="favorite__wrapper-img" src="./images/icon/chevron-down.svg" alt="chevron-down">
                                 </div>
                             </div>
-                                <div class="tariffs__content-box tariffs__content-line">
-                                    <img class="tariffs__box-img" src="./images/content/tariffs2.png" alt="tariffs">
-                                    <div class="tariffs__box-day">Месяц</div>
-                                    <div class="tariffs__box-price">500 руб.</div>
-                                    <a class="tariffs__box-link" href="#">Провести оплату</a>
+                            <div class="favorite__select-check">
+                                <div class="favorite__check-info">
+                                    <div class="favorite__info-status">Статус подписки</div>
+                                    <div class="favorite__info-date">На месяц, до 20.11.2021</div>
                                 </div>
-                                <div class="tariffs__content-box tariffs__content-line">
-                                    <img class="tariffs__box-img" src="./images/content/tariffs3.png" alt="tariffs">
-                                    <div class="tariffs__box-day">1 день</div>
-                                    <div class="tariffs__box-price">500 руб.</div>
-                                    <a class="tariffs__box-link" href="#">Провести оплату</a>
+                                <div class="favorite__check-border"></div>
+                                <div class="favorite__check-info">
+                                    <div class="favorite__info-status">Текущий баланс</div>
+                                    <div class="favorite__info-date">2548 руб</div>
                                 </div>
+                                <div class="favorite__check-link">
+                                    <a class="favorite__check-btn" href="#">Пополнить</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -139,7 +166,7 @@
                 </div>
             </div>
         </footer>
-
+        
     </div>
     <script src="js/main.min.js"></script>
 </body>

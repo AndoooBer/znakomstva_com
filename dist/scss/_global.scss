@@ -37,3 +37,35 @@ body {
 .header__background{
 	background: #2D1436;
 }
+
+.wrapper-favorite{
+	background: url(../images/bg4.png) bottom left no-repeat;
+	@media (max-width:425px) {
+		background: none;
+	}
+}
+.wrapper-account{
+	background: url(../images/bg5.png) bottom right no-repeat;
+	@media (max-width:425px) {
+		background: none;
+	}
+}
+
+.wrapper-error{
+	background: url(../images/bg6.png) center 216px no-repeat, 
+	url(../images/bg7.png) center 98px no-repeat, 
+	url(../images/bg8.png) center 30px no-repeat, 
+	url(../images/bg9.png) center no-repeat,
+	url(../images/bg10.png) center no-repeat,
+	url(../images/bg11.png) center no-repeat,
+	url(../images/bg12.png) right bottom no-repeat, 
+	url(../images/bg13.png) left top no-repeat;
+	@media (max-width:630px){
+		background: url(../images/bg14.png) center 216px no-repeat, 
+	url(../images/bg15.png) center no-repeat, 
+	url(../images/bg16.png) center no-repeat, 
+	url(../images/bg17.png) center no-repeat,
+	url(../images/bg18.png) center no-repeat,
+	url(../images/bg19.png) center no-repeat;
+	}
+}
